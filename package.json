@@ -1,0 +1,23 @@
+{
+  "name": "meta-loop",
+  "version": "0.0.0",
+  "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateodelnorte/meta-loop.git"
+  },
+  "author": "hi@iammattwalters.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateodelnorte/meta-loop/issues"
+  },
+  "homepage": "https://github.com/mateodelnorte/meta-loop#readme",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "loop-things": "0.0.22"
+  }
+}
