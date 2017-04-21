@@ -1,6 +1,6 @@
 {
   "name": "meta-loop",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
   "main": "index.js",
   "scripts": {
