@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const debug = require('debug')('meta-loop');
-const loop = require('loop-things');
+const loop = require('loop');
 const path = require('path');
 const util = require('util');
 
