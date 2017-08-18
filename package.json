@@ -1,6 +1,6 @@
 {
   "name": "meta-loop",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/mateodelnorte/meta-loop#readme",
   "dependencies": {
     "debug": "^2.6.3",
-    "get-meta-file": "0.0.1",
+    "get-meta-file": "0.0.4",
     "loop": "3.0.1"
   }
 }
