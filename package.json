@@ -1,5 +1,8 @@
 {
   "name": "@essential-projects/meta-loop",
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
   "version": "0.0.5",
   "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
   "main": "index.js",
