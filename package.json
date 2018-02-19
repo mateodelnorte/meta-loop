@@ -19,6 +19,6 @@
   "dependencies": {
     "debug": "^2.6.3",
     "get-meta-file": "^0.0.5",
-    "loop": "^3.0.1"
+    "@essential-projects/loop": "^3.0.1"
   }
 }
