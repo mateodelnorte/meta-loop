@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
-const debug = require('debug')('meta-loop');
+const debug = require('debug')('@essential-projects/meta-loop');
 const getMetaFile = require('get-meta-file');
-const loop = require('loop');
+const loop = require('@essential-projects/loop');
 const path = require('path');
 const util = require('util');
 
