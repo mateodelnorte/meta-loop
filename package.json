@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   "dependencies": {
     "debug": "^2.6.3",
     "get-meta-file": "^0.0.5",
-    "@essential-projects/loop": "^3.0.1"
+    "@essential-projects/loop": "^3.0.5"
   }
 }
