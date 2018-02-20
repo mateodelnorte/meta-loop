@@ -1,5 +1,5 @@
 {
-  "name": "@essential-projects/meta-loop",
+  "name": "meta-loop",
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
@@ -22,6 +22,6 @@
   "dependencies": {
     "debug": "^2.6.3",
     "get-meta-file": "^0.0.5",
-    "@essential-projects/loop": "^3.0.5"
+    "loop": "^3.0.5"
   }
 }
