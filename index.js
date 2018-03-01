@@ -31,10 +31,5 @@ module.exports = function (command) {
     directories: folders,
     exitOnError: exitOnError,
     exitOnAggregatedError: exitOnAggregatedError,
-  }, (errorOccured) => {
-    if (exitOnAggregatedError && errorOccured) {
-      console.log('an error occured during loop execution - exiting process');
-      process.exit(1);
-    }
   });
 };
