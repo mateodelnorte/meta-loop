@@ -1,11 +1,12 @@
 {
   "name": "meta-loop",
-  "publishConfig": {
-    "registry": "https://www.npmjs.com"
-  },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "module to locate a meta project's .meta file, and execute a provided command within the meta project's and all child projects' directories",
   "main": "index.js",
+  "bin": {
+    "meta-exec": "./bin/meta-exec",
+    "meta-loop": "./bin/meta-loop"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,6 @@
   "dependencies": {
     "debug": "^2.6.3",
     "get-meta-file": "^0.0.5",
-    "loop": "^3.0.5"
+    "loop": "^3.0.6"
   }
 }

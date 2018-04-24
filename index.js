@@ -14,7 +14,7 @@ module.exports = function (command) {
   const folders = Object.keys(projects).map((folder) => { return path.resolve(folder); });
 
   const exitOnError = process.argv.indexOf('--exit-on-error') >= 0;
-  const exitOnAggregatedError = process.argv.indexOf('--exit-on-aggregated-error') >= 0;
+  const exitOnAggregateError = process.argv.indexOf('--exit-on-aggregated-error') >= 0;
 
   folders.unshift(process.cwd());
 
@@ -30,6 +30,14 @@ module.exports = function (command) {
     command: command,
     directories: folders,
     exitOnError: exitOnError,
-    exitOnAggregatedError: exitOnAggregatedError,
+    exitOnAggregateError: exitOnAggregateError,
   });
 };
+
+module.exports.register = (program) => {
+
+  program
+    .command('exec', 'execute a command against meta repo and child repo dirs')
+    .alias('loop')
+
+}
