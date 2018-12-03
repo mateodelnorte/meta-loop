@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta-loop#readme",
   "dependencies": {
-    "debug": "^2.6.3",
+    "debug": "^4.1.0",
     "get-meta-file": "^0.0.5",
     "loop": "^3.0.6"
   }
