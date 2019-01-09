@@ -10,6 +10,8 @@ const util = require('util');
 module.exports = function (command) {
   
   const meta = getMetaFile({ confirmInMetaRepo: true });
+  if (!meta) return;
+
   const projects = meta.projects;
   const folders = Object.keys(projects).map((folder) => { return path.resolve(folder); });
 
