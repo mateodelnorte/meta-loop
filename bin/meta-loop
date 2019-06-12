@@ -2,11 +2,8 @@
 
 const metaLoop = require('../');
 
-if ( ! process.argv[2] || process.argv[2] === '--help')
-  return console.log(`\n  usage:\n\n    meta exec <command>\n`);
+if (!process.argv[2] || process.argv[2] === '--help') return console.log(`\n  usage:\n\n    meta exec <command>\n`);
 
-let command = process.argv[2] === 'blank' ?
-                      process.argv[3] :
-                      process.argv[2];
+let command = process.argv[2] === 'blank' ? process.argv[3] : process.argv[2];
 
 metaLoop(command);
