@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta-loop#readme",
   "dependencies": {
-    "debug": "^4.1.0",
-    "get-meta-file": "^1.0.0",
-    "loop": "^3.0.6"
+    "debug": "4.1.0",
+    "get-meta-file": "1.0.0",
+    "loop": "3.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",
