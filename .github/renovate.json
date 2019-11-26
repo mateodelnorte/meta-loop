@@ -14,5 +14,9 @@
       "depTypeList": ["devDependencies"],
       "enabled": false
     }
-  ]
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
 }
