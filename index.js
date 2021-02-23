@@ -34,6 +34,7 @@ module.exports = function(command) {
     directories: folders,
     exitOnError: exitOnError,
     exitOnAggregateError: exitOnAggregateError,
+    looprc: meta
   });
 };
 
