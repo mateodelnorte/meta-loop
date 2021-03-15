@@ -43,13 +43,14 @@ module.exports = function(command) {
         console.log(`WARNING: subset \'${subset}\' not found in projects.`);
       }
     }
-    command = command.split(' ')[0];
   } else {
     projects = recursiveSearch(projects);
     folders = projects.map(folder => {
       return path.resolve(folder);
     });
   }
+
+  command = command.substring(1).split('"')[0];
 
   const exitOnError = process.argv.indexOf('--exit-on-error') >= 0;
   const exitOnAggregateError = process.argv.indexOf('--exit-on-aggregated-error') >= 0;
