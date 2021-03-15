@@ -50,7 +50,11 @@ module.exports = function(command) {
     });
   }
 
-  command = command.substring(1).split('"')[0];
+  //meta loop is commonly invoked using the module entrypoint
+  //without options
+  if (command.startsWith('"')) {
+    command = command.substring(1).split('"')[0];
+  }
 
   const exitOnError = process.argv.indexOf('--exit-on-error') >= 0;
   const exitOnAggregateError = process.argv.indexOf('--exit-on-aggregated-error') >= 0;
