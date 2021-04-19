@@ -7,12 +7,12 @@ const loop = require('loop');
 const path = require('path');
 const util = require('util');
 
-module.exports = function(command) {
+module.exports = function (command) {
   const meta = getMetaFile({ confirmInMetaRepo: true });
   if (!meta) return;
 
   const projects = meta.projects;
-  const folders = Object.keys(projects).map(folder => {
+  const folders = Object.keys(projects).map((folder) => {
     return path.resolve(folder);
   });
 
@@ -22,7 +22,7 @@ module.exports = function(command) {
   folders.unshift(process.cwd());
 
   // remove loop flags, and let loop pick them up from process.env
-  ['--exclude', '--exclude-only', '--include', '--include-only', '--parallel'].forEach(flag => {
+  ['--exclude', '--exclude-only', '--include', '--include-only', '--parallel'].forEach((flag) => {
     const flagIndex = command.indexOf(flag);
     if (flagIndex > -1) {
       command = command.substring(0, flagIndex);
@@ -37,6 +37,6 @@ module.exports = function(command) {
   });
 };
 
-module.exports.register = program => {
+module.exports.register = (program) => {
   program.command('exec', 'execute a command against meta repo and child repo dirs').alias('loop');
 };
