@@ -24,8 +24,6 @@ module.exports = function (command) {
     folders.unshift(process.cwd());
   }
 
-  console.log('folders: ', folders);
-
   // remove loop flags, and let loop pick them up from process.env
   ['--exclude', '--exclude-only', '--include', '--include-only', '--parallel'].forEach((flag) => {
     const flagIndex = command.indexOf(flag);
