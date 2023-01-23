@@ -18,8 +18,13 @@ module.exports = function (command) {
 
   const exitOnError = process.argv.indexOf('--exit-on-error') >= 0;
   const exitOnAggregateError = process.argv.indexOf('--exit-on-aggregated-error') >= 0;
+  const skipMeta = process.argv.indexOf('--skip-meta') >= 0;
 
-  folders.unshift(process.cwd());
+  if (!skipMeta) {
+    folders.unshift(process.cwd());
+  }
+
+  console.log('folders: ', folders);
 
   // remove loop flags, and let loop pick them up from process.env
   ['--exclude', '--exclude-only', '--include', '--include-only', '--parallel'].forEach((flag) => {
